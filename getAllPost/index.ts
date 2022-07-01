@@ -1,9 +1,9 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
-
+import postService from "../services/post.service";
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
-  const responseMessage = "This HTTP triggered function executed successfully.";
+  const response = await postService.getAllPost()
   context.res = {
-    body: responseMessage
+    body: response
   };
 
 };
