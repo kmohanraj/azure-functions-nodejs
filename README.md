@@ -73,6 +73,12 @@ Ex, uses the `--template` option to create an HTTP trigger named `createUser`:
 func new --template "Http Trigger" --name createUser
 ```
 
+It is for Blob Trigger
+```
+func new --template "Azure Blob Storage trigger" --name update-pro
+```
+
+
 Ex, creates a Queue Storage trigger named MyQueueTrigger:
 
 ```
